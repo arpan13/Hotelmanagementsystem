@@ -64,10 +64,10 @@ public class Login extends JFrame implements ActionListener {
           try{
               ResultSet res=c.s.executeQuery(str);
               if(res.next()){
-                  new HotelManagementSystem().setVisible(true);
+                  new DashBoard().setVisible(true);
                   this.setVisible(false);
               }else{
-                  JOptionPane.showMessageDialog(null,"invalid user");
+                  JOptionPane.showMessageDialog(null,"Invalid user");
                   this.setVisible(false);
               }
           }catch(Exception e){
