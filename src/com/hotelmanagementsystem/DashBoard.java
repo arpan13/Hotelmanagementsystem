@@ -44,7 +44,7 @@ public class DashBoard extends JFrame {
         add(l1);
 
         JLabel l2=new JLabel("THE TAJ GROUP WELCOMES YOU");
-        l2.setBounds(400,60,1000,50);
+        l2.setBounds(400,80,1000,50);
         l2.setForeground(Color.white);
         l2.setFont(new Font("Tahoma",Font.PLAIN,50));
         l1.add(l2);
