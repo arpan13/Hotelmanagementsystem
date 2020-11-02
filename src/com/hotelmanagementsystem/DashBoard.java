@@ -2,8 +2,10 @@ package com.hotelmanagementsystem;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class DashBoard extends JFrame {
+public class DashBoard extends JFrame implements ActionListener {
     JMenuBar mb;
     JMenu m1,m2;
     JMenuItem i1,i2,i3,i4;
@@ -19,15 +21,19 @@ public class DashBoard extends JFrame {
         mb.add(m2);
 
         i1=new JMenuItem("RECEPTION");
+        i1.addActionListener(this);
         m1.add(i1);
 
         i2=new JMenuItem("ADD EMPLOYEE");
+        i2.addActionListener(this);
         m2.add(i2);
 
         i3=new JMenuItem("ADD ROOMS");
+        i3.addActionListener(this);
         m2.add(i3);
 
         i4=new JMenuItem("ADD DRIVERS");
+        i4.addActionListener(this);
         m2.add(i4);
 
         mb.setBounds(0,0,1950,30);
@@ -52,6 +58,17 @@ public class DashBoard extends JFrame {
         setBounds(0,0,1950,1000);
         setVisible(true);
 
+        
+    }
+
+    public void actionPerformed(ActionEvent ae){
+        if(ae.getActionCommand().equals("RECEPTION")){
+
+        }else if(ae.getActionCommand().equals("ADD EMPLOYEE")){
+            new AddEmployee().setVisible(true);
+        }else if(ae.getActionCommand().equals("ADD ROOMS")){
+            new AddRoom().setVisible(true);
+        }
     }
 
     public static void main(String[] args) {

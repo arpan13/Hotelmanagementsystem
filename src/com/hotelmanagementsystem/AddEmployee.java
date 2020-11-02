@@ -132,7 +132,7 @@ public class AddEmployee extends JFrame implements ActionListener {
 
          getContentPane().setBackground(Color.white);
          setLayout(null);
-         setBounds(540,200,850,550);
+         setBounds(350,200,850,550);
          setVisible(true);
 
      }
