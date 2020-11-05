@@ -63,11 +63,14 @@ public class DashBoard extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent ae){
         if(ae.getActionCommand().equals("RECEPTION")){
+            new Reception().setVisible(true);
 
         }else if(ae.getActionCommand().equals("ADD EMPLOYEE")){
             new AddEmployee().setVisible(true);
         }else if(ae.getActionCommand().equals("ADD ROOMS")){
             new AddRoom().setVisible(true);
+        }else if(ae.getActionCommand().equals("ADD DRIVERS")){
+            new AddDriver().setVisible(true);
         }else if(ae.getActionCommand().equals("ADD DRIVERS")){
             new AddDriver().setVisible(true);
         }
